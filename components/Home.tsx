@@ -3,15 +3,16 @@ import Image from "next/image";
 import Wallet from "./assets/wallets.svg";
 import Bitcoin from "./assets/bitcoin.png";
 import Cross from "./assets/cross.png";
-
+import ReferralLink from "./ReferralLink";
+import Table from "./Table";
 import Rewards from "./Rewards";
 
 type Props = {};
 
 const Home = (props: Props) => {
   return (
-    <div className="bg-black h-screen mt-8 ml-64">
-      <div className="w-[800px] bg-transparent h-screen border-r border-gray-700 p-4">
+    <div className="ml-64 mt-8">
+      <div className="h-min-fit w-[800px] bg-black border-r border-gray-700 p-4">
         <div className="flex justify-between">
           <button className="bg-transparent p-2 border-b-2 border-[#3772FF] text-white">
             Section
@@ -31,7 +32,7 @@ const Home = (props: Props) => {
           </p>
           <div className="flex justify-between">
             <div>
-              <button className="bg-white px-4 py-[6px] rounded-lg mt-6">
+              <button className="bg-white px-4 py-[6px] rounded-lg mt-4">
                 Tutorial
               </button>
             </div>
@@ -48,11 +49,23 @@ const Home = (props: Props) => {
               src={Cross}
               width={20}
               height={20}
-              alt="Picture of the author"
+              alt=""
+              className="cursor-pointer"
             />
           </div>
         </div>
         <Rewards />
+        <div className="flex gap-6 justify-center ">
+          <ReferralLink
+            fees="12.5% of fee"
+            link="https://unityexchange.design"
+          />
+          <ReferralLink
+            fees="12.5% of fee"
+            link="https://unityexchange.design"
+          />
+        </div>
+        <Table />
       </div>
     </div>
   );

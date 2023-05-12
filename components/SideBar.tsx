@@ -19,7 +19,7 @@ type Props = {};
 
 const SideBar = (props: Props) => {
   return (
-    <div>
+    <div className="">
       <aside
         id="logo-sidebar"
         className="fixed top-0 left-0 z-40 w-64 h-screen transition-transform -translate-x-full sm:translate-x-0 mt-8"
@@ -147,8 +147,8 @@ const SideBar = (props: Props) => {
               </a>
             </li>
           </ul>
-          <div className="mt-[60px] flex-col ">
-            <div className="flex gap-2 mb-4">
+          <div className="absolute bottom-0 left-0 ml-2 flex-col mb-12 ">
+            <div className="flex gap-2 mb-4 justify-center">
               <button className="bg-[#353945] text-white rounded-xl p-[6px] text-sm flex gap-[6px]">
                 <Image
                   src={Profile}
