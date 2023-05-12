@@ -11,14 +11,14 @@ type Props = {};
 const CustomLink = (props: Props) => {
   return (
     <div className=" bg-black w-full text-white mt-8">
-      <div className="mt-4 p-4">
+      <div className="mt-4 p-6 justify-center">
         <div className="flex gap-2 justify-between">
-          <div className="bg-[#353945] p-4 rounded-lg flex gap-2">
+          <div className="bg-[#353945] p-4 rounded-lg flex gap-2 cursor-pointer">
             <Image src={Avalanche} alt="" />
             <p>Avalanche</p>
             <Image src={Downarrow} alt="" />
           </div>
-          <div className="border-2 border-blue-600 rounded-lg text-white items-center p-2 flex gap-x-4">
+          <div className="border-2 border-blue-600 rounded-lg text-white items-center p-2 flex gap-x-4 cursor-pointer">
             <Image src={Wallet} width={20} height={20} alt="wallet" />
             <h2 className="text-white">0xf6...1353</h2>
             <Image src={Downarrow} alt="" />
@@ -33,7 +33,7 @@ const CustomLink = (props: Props) => {
         </p>
 
         <input
-          className="bg-[#242731] mt-4 p-4 rounded-lg"
+          className="bg-[#242731] w-full mt-4 p-4 rounded-lg "
           placeholder="ENTER"
         ></input>
         <div className="flex mt-4 justify-center">
@@ -59,9 +59,9 @@ const CustomLink = (props: Props) => {
             </svg>
             Custon link
           </button>
-          <div className="border-2 border-gray-600 rounded-lg text-white items-center px-5 py-2.5 flex gap-x-4">
-            <Image src={Cancel} alt="wallet" />
-            <h2 className="text-white">Cancel</h2>
+          <div className="border-[0.5px] border-gray-600 rounded-lg text-white items-center px-4 py-2 flex gap-x-4">
+            <Image src={Cancel} alt="cancel" />
+            <h2 className="text-white cursor-pointer">Cancel</h2>
           </div>
         </div>
       </div>

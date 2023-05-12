@@ -12,8 +12,9 @@ import Sec6 from "./assets/sec-6.png";
 import Sec7 from "./assets/sec-7.png";
 import Sec8 from "./assets/sec-8.png";
 import Docs from "./assets/doc.png";
-import Network from "./assets/network.png";
-import Toggle from "./assets/toggle.png";
+import Network from "./assets/network.svg";
+import Moon from "./assets/moon.svg";
+import Toggle from "./assets/toggle.svg";
 
 type Props = {};
 
@@ -166,7 +167,8 @@ const SideBar = (props: Props) => {
               <div>
                 <Image src={Network} alt="Network" />
               </div>
-              <Image src={Toggle} alt="Toggle" className="cursor-pointer" />
+
+              <Image src={Toggle} alt="" />
             </div>
           </div>
         </div>
