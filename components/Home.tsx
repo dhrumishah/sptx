@@ -2,7 +2,10 @@ import React from "react";
 import Image from "next/image";
 import Wallet from "./assets/wallets.svg";
 import Bitcoin from "./assets/bitcoin.png";
+import Cross from "./assets/cross.png";
+
 import Rewards from "./Rewards";
+
 type Props = {};
 
 const Home = (props: Props) => {
@@ -21,7 +24,7 @@ const Home = (props: Props) => {
             </button>
           </div>
         </div>
-        <div className="bg-[#ABE8FF] p-4 rounded-lg mt-6">
+        <div className="bg-[#ABE8FF] p-4 rounded-lg mt-6 relative">
           <p>
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry.
@@ -37,6 +40,14 @@ const Home = (props: Props) => {
               src={Bitcoin}
               width={100}
               height={100}
+              alt="Picture of the author"
+            />
+          </div>
+          <div className="absolute inline-flex items-center justify-center w-6 h-6 -top-2 -right-2">
+            <Image
+              src={Cross}
+              width={20}
+              height={20}
               alt="Picture of the author"
             />
           </div>
