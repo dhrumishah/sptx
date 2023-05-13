@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect } from "react";
 import Image from "next/image";
 import Avalanche from "./assets/avalanche.svg";
 import Downarrow from "./assets/down-arrow.svg";
@@ -6,11 +6,9 @@ import Arrow from "./assets/arrow-left.svg";
 import Wallet from "./assets/wallets.svg";
 import Cancel from "./assets/cancel.svg";
 
-type Props = {};
-
-const CustomLink = (props: Props) => {
+const CustomLink = () => {
   return (
-    <div className=" fixed right-0 bg-black w-full text-white mt-8">
+    <div className="w-full bg-black text-white mt-8">
       <div className="mt-4 p-6 justify-center">
         <div className="flex gap-2 justify-between">
           <div className="bg-[#353945] p-4 rounded-lg flex gap-2 cursor-pointer">

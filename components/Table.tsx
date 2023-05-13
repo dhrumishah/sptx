@@ -1,10 +1,26 @@
+"use client";
 import React from "react";
 import Image from "next/image";
 import BTC from "./assets/btc.svg";
 import AVAX from "./assets/avax.svg";
+import { useEffect } from "react";
 type Props = {};
 
 const Table = (props: Props) => {
+  async function getData() {
+    const res = await fetch(
+      "https://raw.githubusercontent.com/akshita151199/APIs/main/data"
+    );
+    if (!res.ok) {
+      throw new Error("Failed to fetch data");
+    }
+    const data = await res.json();
+    console.log(data);
+    return data;
+  }
+  useEffect(() => {
+    getData();
+  }, []);
   return (
     <div className="mt-2 flex-col mb-4">
       <div className="flex gap-4">
