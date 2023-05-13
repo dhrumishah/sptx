@@ -19,7 +19,7 @@ const ReferralLink = (props: Props) => {
       <div className="bg-[#242731] mt-2 rounded-lg p-4">
         <div className="flex justify-between gap-[50px]">
           <p className="font-bold">{props.link} </p>
-          <Image src={Copy} alt="" />
+          <Image src={Copy} alt="" className="cursor-pointer" />
         </div>
       </div>
     </div>

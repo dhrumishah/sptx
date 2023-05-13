@@ -10,7 +10,7 @@ type Props = {};
 
 const CustomLink = (props: Props) => {
   return (
-    <div className=" bg-black w-full text-white mt-8">
+    <div className=" fixed right-0 bg-black w-full text-white mt-8">
       <div className="mt-4 p-6 justify-center">
         <div className="flex gap-2 justify-between">
           <div className="bg-[#353945] p-4 rounded-lg flex gap-2 cursor-pointer">

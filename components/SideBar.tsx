@@ -16,7 +16,7 @@ import Network from "./assets/network.svg";
 import Moon from "./assets/moon.svg";
 import Toggle from "./assets/toggle.svg";
 
-type Props = {};
+interface Props {}
 
 const SideBar = (props: Props) => {
   return (
@@ -165,10 +165,10 @@ const SideBar = (props: Props) => {
             </div>
             <div className="flex gap-2">
               <div>
-                <Image src={Network} alt="Network" />
+                <Image src={Network} alt="Network" className="cursor-pointer" />
               </div>
 
-              <Image src={Toggle} alt="" />
+              <Image src={Toggle} alt="" className="cursor-pointer" />
             </div>
           </div>
         </div>
